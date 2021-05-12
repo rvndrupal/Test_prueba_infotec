@@ -39,7 +39,7 @@ describe('Reto cypres Por medio de Comandos Personalizados', () =>{
     cy.Bloque_Reto_Form("Carlos","Perez","carlos@gmail.com","5548748965","dirección uno","México","Alabama","07989","demo.com","Proyecto demo uno",tiempo)
   })
 
-  it.only('Prueba carga json', () =>{
+  it('Prueba carga json', () =>{
     Cypress.config('defaultCommandTimeout', 25000)
     cy.fixture('datos2').then(testdata  => {
         testdata.forEach(data=>{            
