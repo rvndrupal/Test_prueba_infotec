@@ -32,11 +32,11 @@ describe('Test de Prueba para Cliente de Infotec', () =>{
 
 
   it('Prueba invalida por Apellido', () =>{
-    cy.Bloque_Reto_Form("Carlos","C","carlos@gmail.com","5548748965","dirección uno","México","Alabama","07989","demo.com","Proyecto demo uno",tiempo)
+    cy.Bloque_Reto_Form("Carlos","Juan perez","carlos@gmail.com","5548748965","dirección uno","México","Alabama","07989","demo.com","Proyecto demo uno",tiempo)
   })
 
   it('Prueba Ok', () =>{
-    cy.Bloque_Reto_Form("Carlos","Perez","carlos@gmail.com","5548748965","dirección uno","México","Alabama","07989","demo.com","Proyecto demo uno",tiempo)
+    cy.Bloque_Reto_Form("Carlos","Perez","carlos@gmail.com","5548748965","","México","Alabama","07989","demo.com","Proyecto demo uno",tiempo)
   })
 
   it('Prueba carga json', () =>{

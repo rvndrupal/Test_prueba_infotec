@@ -53,6 +53,20 @@
         "web":"Carlos.com.mx",
         "proyecto":"Proyecto demo de Carlos"
         
+    },
+
+    {
+        "nombre":"Pedro",
+        "apellido":"Perez",
+        "email": "Pedro@gmail.com",
+        "tel":"5540783223",
+        "dir1":"Dirección Pedro",
+        "ciudad":"México",
+        "estado":"Texas",
+        "cp":"78767",
+        "web":"Pedro.com.mx",
+        "proyecto":"Proyecto demo de Pedro"
+        
     }
 
 

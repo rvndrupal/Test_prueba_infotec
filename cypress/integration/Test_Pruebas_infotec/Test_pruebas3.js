@@ -25,7 +25,7 @@ describe('Test de Prueba para Cliente de Infotec', () =>{
   })
 
   it('Prueba validar email', () =>{
-    cy.Bloque_Reto_Form("Carlos","Perez","carlos.com","5548748965","dirección uno","México","Alabama","07989","demo.com","Proyecto demo uno",tiempo)
+    cy.Bloque_Reto_Form("Carlos","Perez","carlos@gmail.com","5548748965","dirección uno","México","Alabama","07989","demo.com","Proyecto demo uno",tiempo)
     cy.Validar_campo2("//small[contains(@data-bv-validator,'emailAddress')]","Please supply a valid email address","Emails")
    
   })

@@ -20,7 +20,7 @@ describe('Test de Prueba para Cliente de Infotec', () =>{
   
 
   it('Prueba invalida por nombre', () =>{
-    cy.Bloque_Reto_Form("R","Perez","carlos@gmail.com","5548748965","dirección uno","México","Alabama","07989","demo.com","Proyecto demo uno",tiempo)
+    cy.Bloque_Reto_Form("Rodrigo","Perez","carlos@gmail.com","5548748965","dirección uno","México","Alabama","07989","demo.com","Proyecto demo uno",tiempo)
     cy.Validar_campo2("(//small[@class='help-block'][contains(.,'Please enter more than 2 characters')])[1]","Please enter more than 2 characters","Nombre")
   })
 
@@ -39,7 +39,7 @@ describe('Test de Prueba para Cliente de Infotec', () =>{
     cy.Bloque_Reto_Form("Carlos","Perez","carlos@gmail.com","5548748965","dirección uno","México","Alabama","07989","demo.com","Proyecto demo uno",tiempo)
   })
 
-  it('Prueba carga json', () =>{
+  it.only('Prueba carga json', () =>{
     Cypress.config('defaultCommandTimeout', 25000)
     cy.fixture('datos2').then(testdata  => {
         testdata.forEach(data=>{            
