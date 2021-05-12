@@ -6,7 +6,7 @@ require('cypress-xpath')
 require('cypress-plugin-tab')
 
 
-describe('Reto cypres Por medio de Comandos Personalizados', () =>{ 
+describe('Test de Prueba para Cliente de Infotec', () =>{ 
   let tiempo=500
   before(()=>{    
     cy.visit('https://www.seleniumeasy.com/test/input-form-demo.html'),
